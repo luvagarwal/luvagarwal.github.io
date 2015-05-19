@@ -1,0 +1,103 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\usepackage{hyperref}
+
+% personal data
+\name{Luv}{Agarwal}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+\address{612-613 Nirman Nagar - AB}{Jaipur}{India 302019}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+91-8143125149}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{agarwal.iiit@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\homepage{https://github.com/luviiit}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Interests}
+\cvitem{Machine Learning}{I came across this in search of a solution and found its approach to the solution extremely fascinating. In ML I have learnt a couple of concepts like linear regression, logistic regression, gradient descent, neural networks (ongoing), et al.}
+\cvitem{Web Development}{I have been doing web development from almost the beginning of my 2nd semester and after that I have worked on building a couple of websites.}
+\cvitem{Quantum Information}{I have learnt basics of quantum information and find its power quite fascinating. This is also my research field in college which will start from July 2015.}
+\cvitem{Working on my own ideas}{In my free time I like to work on my own ideas irrespective of whether they are out of scope of my present knowledge. This helps me learn about new technologies and solutions to different problems.}
+
+\section{Education}
+\cventry{CGPA-6.5/10}{Bachelors in Computer Science and Masters in Computational Natural Science}{International Institute of Information Technology - Hyderabad}{2013-2018 expected}{\textit{}}{}  % arguments 3 to 6 can be left empty
+\cvitem{Saint Soldier Public School}{Secondary and Higher Secondary}
+
+\section{Work Experience}
+\cventry{Sept - Dec 2014}{Developer}{Analytics System}{Hyderabad}{}{The project aims to build an analytics platform for an existing website which tracks the users and displays them to different merchants in interactive fashion.\newline{}%
+Technology and features:%
+\begin{itemize}%
+\item Facebook, Google+, Twitter, Instagram integration.
+\item Use of multiple databases to reduce load on user related database.
+\item Interactive analytics dashboard for merchants
+\item Used Django as web framework, MySQL as DBMS, google charts, facebook graph api, google api, et al.
+\end{itemize}}
+
+\cvitem{FruitNinja Clone for web}{Game can be played at \underline{\textit{http://luviiit.github.io/FruitNinja/Index/index.html}}}{}{An HTML5 based game to imitate android FruitNinja game (\underline{\textit{http://fruitninja.com}}). Source Code can be seen at \underline{\textit{https://github.com/luviiit/FruitNinja}}}{}{}{}{}
+
+\cvitem{Contributor at Mozilla}{\underline{https://bugzilla.mozilla.org/user\_profile?login=luvagarwal}}{}{}{}{}{}{}
+
+\cvitem{Contributor at SymPy}{\underline{\textit{https://github.com/sympy/sympy/issues?q=author:luviiit}}}{}{}{}{}{}{}
+
+\cvitem{Pharmacy Website}{}{I with my team built a website for a pharmacy company as a part of my college project in PHP}{}{}{}{}{}
+
+\cvitem{Other Small Projects}{\underline{\textit{https://github.com/luviiit?tab=repositories}}}{}{}{}{}{}{}
+
+
+\section{Computer Languages, Frameworks and others}
+\cvitemwithcomment{Python}{}{I started learning python 1.5 years ago and have come a long way. It is my default computer language as it gives me an ease to convert my ideas into code.}
+\cvitemwithcomment{C}{}{Use it in competitive programming}
+\cvitemwithcomment{PHP}{}{I started with PHP 1.5 years ago and is my first web development scripting language.}
+\cvitemwithcomment{bash}{}{Use it to perform simple day to day tasks and customize my PC.}
+\cvitemwithcomment{Javascript}{}{}
+\cvitemwithcomment{C++}{}{Use it in competitive programming}
+\cvitemwithcomment{Django}{}{I learnt Django for a project and have now used in couple of websites.}
+\cvitemwithcomment{OpenGL}{}{Learnt in a college course. My game carrom (2-d) can be seen at \underline{\textit{https://github.com/luviiit/Carom-OpenGL}}}
+\cvitemwithcomment{MATLAB}{}{(beginner) Use it while learning Machine Learning}
+
+\end{document}
+
+
+%% end of file `template.tex'.
+
